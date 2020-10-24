@@ -32,6 +32,6 @@ public class StorePlusService implements StoreService {
             total += product.getPrice();
         }
 
-        System.out.printf("Your proStore total is: %f", total*(1+vat));
+        System.out.printf("Your proStore total is: %.2f", total*(1+vat));
     }
 }
