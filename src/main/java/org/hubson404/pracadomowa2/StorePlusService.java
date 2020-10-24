@@ -13,7 +13,7 @@ import java.util.List;
 @Setter
 @Service
 @Profile("Plus")
-@ConfigurationProperties("store-plus-properties")
+@ConfigurationProperties("store-properties")
 public class StorePlusService implements StoreService {
 
     private final List<Product> shoppingCart = new ArrayList<>();
@@ -32,6 +32,6 @@ public class StorePlusService implements StoreService {
             total += product.getPrice();
         }
 
-        System.out.printf("Your proStore total is: %.2f", total*(1+vat));
+        System.out.printf("Your plusStore total is: %.2f", total*(1+vat));
     }
 }

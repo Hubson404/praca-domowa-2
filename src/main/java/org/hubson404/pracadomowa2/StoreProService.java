@@ -14,7 +14,7 @@ import java.util.List;
 @Setter
 @Service
 @Profile("Pro")
-@ConfigurationProperties("store-pro-properties")
+@ConfigurationProperties("store-properties")
 public class StoreProService implements StoreService {
 
     private final List<Product> shoppingCart = new ArrayList<>();
